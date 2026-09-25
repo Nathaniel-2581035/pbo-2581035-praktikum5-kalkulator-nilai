@@ -22,11 +22,15 @@ public class KalkulatorNIlaiAkhir {
         double nilaiFinal = input.nextDouble();
 
         int akhirInt = (int) nilaiPraktikum * 30/100 + (int) nilaiTugas * 20/100 + (int) nilaiMid * 20/100 + (int) nilaiFinal * 30/100;
-        double akhir = nilaiPraktikum * 30/100 + nilaiTugas * 20/100 + nilaiMid * 20/100 + nilaiFinal * 30/100;
+        double akhir = nilaiPraktikum * 30/100 + nilaiTugas * 20/100 + nilaiMid * 20/100;
+        akhir += nilaiFinal * BOBOT_FINAL;
         System.out.println("Versi int: " + akhirInt);
         System.out.println("Versi double: " + akhir);
 
 
+        int dipotong = (int) akhir;
+        long dibulatkan = Math.round(akhir);
+        double selisih = dibulatkan - dipotong;
 
 
     }
