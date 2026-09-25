@@ -31,7 +31,23 @@ public class KalkulatorNIlaiAkhir {
         int dipotong = (int) akhir;
         long dibulatkan = Math.round(akhir);
         double selisih = dibulatkan - dipotong;
+        boolean lulus = akhir >= 60;
 
+        System.out.println();
+        System.out.println("akhir   : " + akhir);
+        System.out.println("dipotong    : " + dipotong);
+        System.out.println("dibulatkan  : " + dibulatkan);
+        System.out.println();
+        System.out.println("==== NILAI AKHIR ====");
+        System.out.println("Praktikum   : " + nilaiPraktikum);
+        System.out.println("Tugas       : " + nilaiTugas);
+        System.out.println("Mid         : " + nilaiMid);
+        System.out.println("Final       : " + nilaiFinal);
+        System.out.println("Nilai akhir : " + akhir);
+        System.out.println("Dipotong(int): " + dipotong);
+        System.out.println("dibulatkan(round) : " + dibulatkan);
+        System.out.println("selisih     : " + selisih);
+        System.out.println("Lulus (>=60) : " + lulus);
 
     }
 }
