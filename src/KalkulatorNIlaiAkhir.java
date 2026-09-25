@@ -27,11 +27,10 @@ public class KalkulatorNIlaiAkhir {
         System.out.println("Versi int: " + akhirInt);
         System.out.println("Versi double: " + akhir);
 
-
-        int dipotong = (int) akhir;
+        int dipotong = (int) akhir; // kadang beda kadang sama, tergantung desimalnya lewat 0.5 apa engga
         long dibulatkan = Math.round(akhir);
         double selisih = dibulatkan - dipotong;
-        boolean lulus = akhir >= 60;
+        boolean lulus = akhir >= 60; // boolean langsung dari perbandingan, tanpa if
 
         System.out.println();
         System.out.println("akhir   : " + akhir);
